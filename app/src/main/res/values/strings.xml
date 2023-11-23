@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Madex Demo App</string>
+    <string name="advert_integration">ADVERT INTEGRATION</string>
+    <string name="consent_manager_integration">CONSENT MANAGER INTEGRATION</string>
+    <string name="device_info">DEVICE INFO</string>
+    <string name="interstitial">Interstitial</string>
+    <string name="rewarded_video">Rewarded Video</string>
+    <string name="consent_manager">Consent Manager</string>
+    <string name="device_info_lower">Device Info</string>
+    <string name="copy">Copy</string>
+    <string name="clear_events">Clear events</string>
+    <string name="events">Events</string>
+    <string name="show_no_gdpr_window">Show NO-GDPR Window</string>
+    <string name="show_gdpr_window">Show GDPR Window</string>
+    <string name="actions">Actions</string>
+    <string name="destroy_ad">Destroy Ad</string>
+    <string name="show_ad">Show Ad</string>
+    <string name="load_ad">Load Ad</string>
+    <string name="madex">Madex</string>
+    <string name="yandex">Yandex</string>
+    <string name="ironsource">IronSource</string>
+    <string name="mintegral">Mintegral</string>
+    <string name="mediation">Mediation</string>
+</resources>

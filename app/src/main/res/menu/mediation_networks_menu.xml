@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/madex"
+        android:title="@string/madex" />
+
+    <item
+        android:id="@+id/yandex"
+        android:title="@string/yandex" />
+
+    <item
+        android:id="@+id/ironsource"
+        android:title="@string/ironsource" />
+</menu>
