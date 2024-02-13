@@ -62,19 +62,14 @@ public class RewardedActivity extends AdvertActivity implements RewardedListener
 
         if(Objects.equals(network, madex)) {
             setPlacementName(EnvironmentVariables.madexRewardedUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinRewardedUnitID, null);
         }else if(Objects.equals(network, yandex)) {
             setPlacementName(EnvironmentVariables.yandexRewardedlUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinRewardedUnitID, null);
         }else if(Objects.equals(network, ironsource)) {
             setPlacementName(EnvironmentVariables.ironsourceRewardedlUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinRewardedUnitID, null);
         }else if(Objects.equals(network, mintegral)) {
-            setPlacementName(EnvironmentVariables.mintegraleRewardedlUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinRewardedUnitID, null);
+            setPlacementName(EnvironmentVariables.mintegralRewardedlUnitID);
         }else if(Objects.equals(network, applovin)) {
-            setPlacementName(EnvironmentVariables.ironsourceInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, "123");
+            setPlacementName(EnvironmentVariables.applovinRewardedlUnitID);
         }
     }
 

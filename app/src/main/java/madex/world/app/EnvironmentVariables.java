@@ -9,5 +9,7 @@ public abstract class EnvironmentVariables {
     static final String ironsourceInterstitialUnitID = "82e3bba6-6add-4594-8bb7-f96fef5b252d";
     static final String ironsourceRewardedlUnitID = "42e716e1-91c0-47e0-9832-c36ada6fa836";
     static final String mintegralInterstitialUnitID = "";
-    static final String mintegraleRewardedlUnitID = "";
+    static final String mintegralRewardedlUnitID = "";
+    static final String applovinInterstitialUnitID = "c108f92a-6621-41a7-9e33-2f5a564e2e24";
+    static final String applovinRewardedlUnitID = "ff4e2a4b-ec81-4cf7-956c-ef0dc3493877";
 }

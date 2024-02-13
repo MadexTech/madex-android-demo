@@ -58,19 +58,14 @@ public class InterstitialActivity extends AdvertActivity implements Interstitial
 
         if(Objects.equals(network, madex)) {
             setPlacementName(EnvironmentVariables.madexInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, yandex)) {
             setPlacementName(EnvironmentVariables.yandexInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, ironsource)) {
             setPlacementName(EnvironmentVariables.ironsourceInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, mintegral)) {
             setPlacementName(EnvironmentVariables.mintegralInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, applovin)) {
-            setPlacementName(EnvironmentVariables.ironsourceInterstitialUnitID);
-            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, "123");
+            setPlacementName(EnvironmentVariables.applovinInterstitialUnitID);
         }
     }
 
