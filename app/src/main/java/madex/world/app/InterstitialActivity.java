@@ -5,9 +5,12 @@ import android.os.Bundle;
 
 import java.util.Objects;
 
+import sspnet.tech.core.AdPayload;
 import sspnet.tech.core.InterstitialListener;
 import sspnet.tech.unfiled.AdException;
 import sspnet.tech.madex.Madex;
+import sspnet.tech.unfiled.ExternalInfoStrings;
+
 public class InterstitialActivity extends AdvertActivity implements InterstitialListener {
 
     @Override
@@ -20,27 +23,27 @@ public class InterstitialActivity extends AdvertActivity implements Interstitial
     }
 
     @Override
-    public void onInterstitialLoaded() {
+    public void onInterstitialLoaded(AdPayload adPayload) {
         addLog("onInterstitialLoaded: Ad loaded and ready to show.");
     }
 
     @Override
-    public void onInterstitialLoadFail(AdException error) {
+    public void onInterstitialLoadFail(AdPayload adPayload, AdException error) {
         addLog("onInterstitialLoadFail: Ad was not loaded." + error.getDescription() + " " + error.getCaused() + ".");
     }
 
     @Override
-    public void onInterstitialShown() {
+    public void onInterstitialShown(AdPayload adPayload) {
         addLog("onInterstitialShown: Ad shown.");
     }
 
     @Override
-    public void onInterstitialShowFailed(AdException error) {
+    public void onInterstitialShowFailed(AdPayload adPayload, AdException error) {
         addLog("onInterstitialShowFailed: Ad was not shown." + error.getDescription() + " " + error.getCaused() + ".");
     }
 
     @Override
-    public void onInterstitialClosed() {
+    public void onInterstitialClosed(AdPayload adPayload) {
         addLog("onInterstitialClosed: Ad closed.");
     }
 
@@ -51,15 +54,23 @@ public class InterstitialActivity extends AdvertActivity implements Interstitial
         final String yandex = resources.getString(R.string.yandex);
         final String ironsource = resources.getString(R.string.ironsource);
         final String mintegral = resources.getString(R.string.mintegral);
+        final String applovin = resources.getString(R.string.applovin);
 
         if(Objects.equals(network, madex)) {
             setPlacementName(EnvironmentVariables.madexInterstitialUnitID);
+            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, yandex)) {
             setPlacementName(EnvironmentVariables.yandexInterstitialUnitID);
+            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, ironsource)) {
             setPlacementName(EnvironmentVariables.ironsourceInterstitialUnitID);
+            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
         }else if(Objects.equals(network, mintegral)) {
             setPlacementName(EnvironmentVariables.mintegralInterstitialUnitID);
+            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, null);
+        }else if(Objects.equals(network, applovin)) {
+            setPlacementName(EnvironmentVariables.ironsourceInterstitialUnitID);
+            Madex.setCustomParams(ExternalInfoStrings.applovinInterstitialUnitID, "123");
         }
     }
 

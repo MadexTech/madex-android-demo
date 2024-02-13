@@ -11,7 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+import sspnet.tech.core.InitializationListener;
 import sspnet.tech.madex.Madex;
+import sspnet.tech.unfiled.AdException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -86,6 +88,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Madex.enableDebug(true);
-        Madex.initialize(EnvironmentVariables.publisherID);
+        Madex.initialize(EnvironmentVariables.publisherID, new InitializationListener() {
+            @Override
+            public void onInitializeSuccess() {
+
+            }
+
+            @Override
+            public void onInitializeFailed(AdException e) {
+
+            }
+        });
     }
 }
