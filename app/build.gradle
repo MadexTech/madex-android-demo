@@ -37,10 +37,26 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-    implementation 'sspnet.tech:madex:1.4.0'
+    // connection of Madex SDK dependency
+    implementation 'sspnet.tech:madex:1.4.3'
+
+    // connection of Applovin SDK advertising network dependency
+    implementation 'sspnet.tech.adapters:applovin:1.1.4'
+    implementation 'com.applovin:applovin-sdk:12.1.0'
+
+    // connection of IronSource SDK advertising network dependency
+    implementation 'sspnet.tech.adapters:ironsource:1.2.3'
+    implementation 'com.ironsource.sdk:mediationsdk:7.8.1'
+
+    // connection of Yandex SDK advertising network dependency
+    implementation 'sspnet.tech.adapters:yandex:1.2.3'
+    implementation 'com.yandex.android:mobileads:7.1.0'
+
+    // connection of Mintegral SDK advertising network dependency
+    implementation 'sspnet.tech.adapters:mintegral:1.2.4'
+    implementation 'com.mbridge.msdk.oversea:reward:16.6.31'
+    implementation 'com.mbridge.msdk.oversea:newinterstitial:16.6.31'
+
+    // connection of Consent Manager SDK dependency
     implementation 'sspnet.tech.consent:madex:1.1.2'
-    implementation 'sspnet.tech.adapters:yandex:1.2.2'
-    implementation 'sspnet.tech.adapters:ironsource:1.2.2'
-    implementation 'sspnet.tech.adapters:mintegral:1.2.3'
-    implementation 'sspnet.tech.adapters:applovin:1.1.3'
 }
