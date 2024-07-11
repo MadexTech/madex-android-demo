@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "madex.world.app"
-        minSdk 22
+        minSdk 23
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -38,25 +38,25 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // connection of Madex SDK dependency
-    implementation 'sspnet.tech:madex:1.4.3'
+    implementation 'sspnet.tech:madex:1.5.0'
 
     // connection of Applovin SDK advertising network dependency
-    implementation 'sspnet.tech.adapters:applovin:1.1.4'
+    implementation 'sspnet.tech.adapters:applovin:1.2.0'
     implementation 'com.applovin:applovin-sdk:12.1.0'
 
     // connection of IronSource SDK advertising network dependency
-    implementation 'sspnet.tech.adapters:ironsource:1.2.3'
+    implementation 'sspnet.tech.adapters:ironsource:1.3.0'
     implementation 'com.ironsource.sdk:mediationsdk:7.8.1'
 
     // connection of Yandex SDK advertising network dependency
-    implementation 'sspnet.tech.adapters:yandex:1.2.3'
+    implementation 'sspnet.tech.adapters:yandex:1.3.0'
     implementation 'com.yandex.android:mobileads:7.1.0'
 
     // connection of Mintegral SDK advertising network dependency
-    implementation 'sspnet.tech.adapters:mintegral:1.2.4'
+    implementation 'sspnet.tech.adapters:mintegral:1.3.0'
     implementation 'com.mbridge.msdk.oversea:reward:16.6.31'
     implementation 'com.mbridge.msdk.oversea:newinterstitial:16.6.31'
 
     // connection of Consent Manager SDK dependency
-    implementation 'sspnet.tech.consent:madex:1.1.2'
+    implementation 'sspnet.tech.consent:madex:1.2.0'
 }
