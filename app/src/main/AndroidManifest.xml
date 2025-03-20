@@ -13,6 +13,7 @@
         tools:targetApi="n">
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,33 +23,51 @@
         </activity>
         <activity
             android:name=".InterstitialActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="false"
-            android:label="@string/interstitial">
-            <meta-data
+            android:label="@string/interstitial"
+            android:parentActivityName=".MainActivity">
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
         <activity
             android:name=".RewardedActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="false"
-            android:label="@string/rewarded_video">
+            android:label="@string/rewarded_video"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
         <activity
-            android:name=".ConsentManagerActivity"
+            android:name=".BannerActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="false"
-            android:label="@string/consent_manager">
+            android:label="@string/banner"
+            android:parentActivityName=".MainActivity">
             <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ConsentManagerActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/consent_manager"
+            android:parentActivityName=".MainActivity">
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
         <activity
             android:name=".DeviceInfoActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="false"
-            android:label="@string/device_info_lower">
-            <meta-data
+            android:label="@string/device_info_lower"
+            android:parentActivityName=".MainActivity">
+        <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
         </activity>
