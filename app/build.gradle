@@ -38,7 +38,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
     // connection of Madex SDK dependency
-    implementation 'sspnet.tech:madex:1.7.2'
+    implementation 'sspnet.tech:madex:1.7.3'
 
     // connection of Applovin SDK advertising network dependency
     implementation 'sspnet.tech.adapters:applovin:1.4.0'
